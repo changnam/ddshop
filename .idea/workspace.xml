@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cd2d13f-17da-44e9-8ba1-19a3f1b1ef9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="5cd2d13f-17da-44e9-8ba1-19a3f1b1ef9e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +173,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="258" />
+    <option name="x" value="262" />
     <option name="width" value="837" />
     <option name="height" value="877" />
   </component>
@@ -274,8 +272,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="258" y="0" width="837" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="262" y="0" width="837" height="877" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32" />
