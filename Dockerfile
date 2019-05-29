@@ -1,0 +1,14 @@
+FROM python:3.6
+
+RUN pip install uwsgi
+RUN pip install pymysql
+
+WORKDIR /var/www/app/ddshop
+ADD     ddshop.tar ./
+
+RUN pip install -r requirements.txt
+
+#RUN chown -R nginx:nginx /var/www/app/ddshop
+
+ENTRYPOINT ["uwsgi", "--socket", "0.0.0.0:8001", \
+               "--module", "config.wsgi"]
