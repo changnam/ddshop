@@ -9,6 +9,7 @@ ADD     ddshop.tar ./
 RUN pip install -r requirements.txt
 
 #RUN chown -R nginx:nginx /var/www/app/ddshop
+EXPOSE 8001
 
 ENTRYPOINT ["uwsgi", "--socket", "0.0.0.0:8001", \
                "--module", "config.wsgi"]
