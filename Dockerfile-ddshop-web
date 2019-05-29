@@ -1,0 +1,14 @@
+FROM cngoh1/ddshop-web:base
+
+RUN mkdir -p /var/www/app/ddshop
+WORKDIR /var/www/app/ddshop
+COPY ./media ./media
+COPY ./uwsgi_params ./
+
+RUN mkdir -p /var/www/app/ddshop/DDshop
+WORKDIR /var/www/app/ddshop/DDshop
+COPY ./DDshop/static ./static
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
