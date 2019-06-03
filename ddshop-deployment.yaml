@@ -13,13 +13,13 @@ spec:
     spec:
       containers:
         - name: ddshop-app
-          image: cngoh1/ddshop-app:2.0
+          image: cngoh1/ddshop-app:3.0
           imagePullPolicy: IfNotPresent
           ports:
             - name: uwsgi
               containerPort: 8001
         - name: ddshop-web
-          image: cngoh1/ddshop-web:2.0
+          image: cngoh1/ddshop-web:3.0
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -32,16 +32,14 @@ kind: Service
 metadata:
   name: ddshop-svc-nodeport
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30080
       protocol: TCP
       name: http
     - port: 443
       targetPort: 443
-      nodePort: 30443
       protocol: TCP
       name: https
   selector:
