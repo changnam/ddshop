@@ -6,3 +6,5 @@ db.sqlite3
 .DS_Store
 
 ddshop.tar
+ddshop-web.tar
+ddshop-app.tar

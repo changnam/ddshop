@@ -13,13 +13,13 @@ spec:
     spec:
       containers:
         - name: ddshop-app
-          image: cngoh1/ddshop-app:3.0
+          image: cngoh1/ddshop-app
           imagePullPolicy: IfNotPresent
           ports:
             - name: uwsgi
               containerPort: 8001
         - name: ddshop-web
-          image: cngoh1/ddshop-web:3.0
+          image: cngoh1/ddshop-web
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
