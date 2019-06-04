@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ddshop
 spec:
-  replicas: 4
+  replicas: 1
   template:
     metadata:
       labels:
