@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'DDshop',
     'cart',
     'orders',
+    'accounts',
 ]
 
 MIDDLEWARE = [
