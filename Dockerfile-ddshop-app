@@ -8,8 +8,6 @@ ADD     ddshop.tar ./
 
 RUN pip install -r requirements.txt
 
-RUN python manage.py collectstatic 
-
 EXPOSE 8001
 
 ENTRYPOINT ["uwsgi", "--socket", "0.0.0.0:8001", \

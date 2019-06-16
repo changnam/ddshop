@@ -1,13 +1,16 @@
-FROM cngoh1/ddshop-web:base
+FROM nginx
 
 RUN mkdir -p /var/www/app/ddshop
+RUN mkdir -p /etc/nginx/sites-available
+RUN mkdir -p /etc/nginx/sites-enabled
+ 
 WORKDIR /var/www/app/ddshop
 COPY ./media ./media
 COPY ./uwsgi_params ./
+COPY ./static ./static
 
-RUN mkdir -p /var/www/app/ddshop/DDshop
-WORKDIR /var/www/app/ddshop/DDshop
-COPY ./DDshop/static ./static
+COPY ddshop-nginx.conf /etc/nginx/sites-available/
+RUN ln -s /etc/nginx/sites-available/ddshop-nginx.conf /etc/nginx/sites-enabled/
 
 EXPOSE 80
 
