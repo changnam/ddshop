@@ -94,7 +94,7 @@ DATABASES = {
         'NAME': 'ddshop',
         'USER':'ddshop',
         'PASSWORD':'P@ssw0rd',
-        'HOST':'10.10.20.130',
+        'HOST':'172.30.1.130',
         'PORT':'3306',
         # 'OPTIONS' : {
         #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO'",
@@ -158,3 +158,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'products/')
 
 CART_SESSION_ID = 'cart'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
