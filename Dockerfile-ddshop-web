@@ -9,8 +9,7 @@ COPY ./media ./media
 COPY ./uwsgi_params ./
 COPY ./static ./static
 
-COPY ddshop-nginx.conf /etc/nginx/sites-available/
-RUN ln -s /etc/nginx/sites-available/ddshop-nginx.conf /etc/nginx/sites-enabled/
+COPY ddshop-nginx.conf /etc/nginx/conf.d/
 
 EXPOSE 80
 
